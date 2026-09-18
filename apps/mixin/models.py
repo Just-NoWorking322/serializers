@@ -17,5 +17,7 @@ class Human(Mixin):
     addres = models.CharField(max_length=255, blank=True, null=True)
     active = models.BooleanField(default=True)
 
-    
+    class Meta:
+        ordering = ['id']
+        
 # DRY = Dont repeat yorself
